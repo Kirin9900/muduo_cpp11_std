@@ -27,6 +27,16 @@
 
 
 
+## 关键组件
+
+- **Acceptor**：负责监听客户端的连接请求。
+- **EventThreadPool**：管理一组工作线程，用于处理网络I/O事件。
+- **EventLoop**：每个线程中的核心组件，负责调度事件处理器。
+- **Channel**：封装了对文件描述符的操作，如读写、关闭等。
+- **Poller**：提供了高效的I/O多路复用机制，目前支持`epoll`。
+
+
+
 ## 索引
 
 [智能指针](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/materials/Smart%20pointers%20(thread%20safety).md)
