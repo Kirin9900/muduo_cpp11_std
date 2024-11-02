@@ -1,4 +1,4 @@
-#Poller
+# Poller
 
 Poller class 是IO multiplexing的封装，muduo同时支持poll和epoll两种IO multiplexing的机制。Poller是EventLoop的间接成员，只供其owner EventLoop在IO线程调用，因此无需加锁，其生命周期与EcentLoop相等。**Poller并不拥有Channel,Channel在析构之前必须自己unregistered(EventLoop::removeChannel()),避免空悬指针**
 
