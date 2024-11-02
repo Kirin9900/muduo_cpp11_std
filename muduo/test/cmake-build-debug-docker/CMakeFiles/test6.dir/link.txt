@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/test6.dir/test6.cc.o -o test6  -lmuduo 
