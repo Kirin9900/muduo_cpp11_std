@@ -15,7 +15,7 @@
 
 1. 设计并实现高并发TCP网络库，利用C++11特性，处理能力提升至每秒处理XX万次连接。
 
-2. 集成Acceptor EventThreadPoo，EventLoop,Channel,Poll等关键模块，优化网络性能，
+2. 集成Acceptor EventThreadPool，TcpConnection,EventLoop,Channel,Poll等关键模块，优化网络性能，
 
 3. 创新引入one loop per thread模型，并结合Reactor模式，增强服务器处理并发请求的效率。
 
