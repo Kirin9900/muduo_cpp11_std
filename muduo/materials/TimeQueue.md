@@ -13,6 +13,9 @@ TimerQueue数据结构的选择，TimerQueue需要高效组织尚未到期的Tim
 
 ### Timestamp
 
+
+
+
 Timestamp用于表示基于微秒(microseconds)的时间戳
 
 Timestamp是一个不可变类，表示时间戳，精度为微秒，
@@ -35,7 +38,11 @@ static const int kMicroSecondsPerSecond:常量，每秒的微妙数
 
 inline double timeDifference(Timestamp high,Timestamp low)  计算两个时间戳之间的差值，单位是秒
 
-inline Timestamp addTime(Timestamp timestamp,double seconds) 将指定的秒数(seconds* 1000)加到timestamp上，返回新的Timestamp对象
+inline Timestamp addTime(Timestamp timestamp,double seconds) 将指定的秒数(seconds* 1000)加到timestamp上，返回新的Timestamp对象  
+
+[TimeStamp.h](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/TimeStamp.h)  
+
+[TimeStamp.cc](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/TimeStamp.cpp)
 
 
 ### Timer
@@ -65,8 +72,19 @@ void Timer::restart(Timestamp now) 根据定时器是否重复来重置到期时
 
 如果repeat_为false，则将expiration设置为无效时间戳Timestamp::invalid()
 
+[Timer.h](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/Timer.h)
+[Timer.cc](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/Timer.cpp)  
+
+
+
+
 
 ### TimeQueue
+
+[TimerQueue.h](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/TimerQueue.h)  
+
+[TimerQueue.cc](https://github.com/Kirin9900/muduo_cpp11_std/blob/main/muduo/TimerQueue.cpp)  
+
 
 
 
